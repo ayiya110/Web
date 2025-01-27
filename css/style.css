@@ -1,0 +1,45 @@
+*{
+    margin:5px;
+    padding: 1px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+header{
+    background-color: blue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+nav .menu-flex{
+    list-style: none;
+    padding: 1rem;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    padding: 4rem 7rem 7rem 7rem;
+}
+
+.contenedor {
+    width: 26.5rem;
+    height: 15rem;
+    background-color: #3498db;
+    margin-bottom: 0.5rem; 
+}
+
+.texto {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+}

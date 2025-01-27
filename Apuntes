@@ -1,0 +1,315 @@
+El archivo index.html debe llamarse siempre así para que  el servidor web lo reconozca y los pueda cargar
+
+
+Los elementos de HTML se pueden conformar con una etiqueta o con dos. Si el elemento tiene 2 etiquetas SIEMPRE deben existir las dos (la de apertura y la de cierre)
+
+
+Las etiquetas <meta> de HTML siempre se encontrarán en el <head> del documento y valdrán para configurar ciertos aspectos técnicos de la web. Hay dos que son obligatorias:
+- La etiqueta <meta> de codificación
+- La etiqueta <meta> para indicar al navegador que la web es responsive
+
+
+Para activar el "word wrap" -> alt + z
+
+
+dentro del elemento <body></body> es donde encontraremos el contenido visible para el usuario. Es la parte de la web que va a renderizar el navegador
+
+
+En el primer nanosegundo que abrimos nuestra web en chrome también vamos a abrir las DevTools con F12
+
+
+El elemento <title></title> es el título de nuestra web para el navegador. Este título se puede ver en la pestaña del navegador
+
+
+Añadir estos elementos:
+- Un subtítulo y un sub-sub título
+- Un párrafo. Dentro del párrafo un enlace que lleve a la wikipedia.
+- Otro párrafo y dentro una palabra en negrita y otra en cursiva
+- Otro párrafo y dentro un salto de línea
+- Lista desordenada de frutas (3-5)
+- Lista ordenada de números (con el texto en inglés)
+----------------------------------------------------------------------
+
+- Una imagen de un gato que sea un enlace al artículo de wikipedia de los gatos
+- Agrupar los 3 párrafos anteriores dentro de otro elemento de HTML que funcione como un contenedor
+
+
+
+## CSS(cascading style sheet)
+
+CSS nos vale para dar estilos a nuestro HTML. Podemos modificar tanto la estética de los elemtnos de HTML como la estructura. Es indispensable para la creación de interfaces visualmente interesantes y responsive.
+
+1. CSS en línea (internal CSS) NO ES LA FORMA CORRECTA
+Añade el estilo de CSS o propiedades directamente dentro de los elementos de HTML usando el atributo style.
+
+2. CSS interno (internal CSS) NO ES LA FORMA CORRECTA
+Se coloca dentro del HTML en el elemento <head></head> usando el elemento <style></style>.
+
+3. CSS externo (en un archivo propio de CSS) FORMA CORRECTA
+El archivo CSS se enlaza usando la etiqueta <link> dentro del elemento <head></head>.
+
+
+
+SELECTORES BÁSICOS DE CSS:
+
+1. selector por etiqueta (tag): selecciona todos los elementos del mismo tipo 
+
+2. selector por clase (class): usa un punto (.) seguido del nombre de la clase. El o los elemtnos de HTML deben contener el nombre de la clase dentro del atributo class.
+
+3. selector por ID: usa el símbolo # seguido del nombre del ID que tenga el elemento de HTML dentro del atributo ID.
+
+4. selector universal (*): Me permite seleccionar todos los elementos del HTML o de dentro de un elemento HTML.
+
+Jerarquía de selectores:
+ID >> Class >> tag >> *
+
+
+PROPIEDADES BÁSICAS DE CSS:
+- COLOR Y FONDO
+    - color: cambia el color del texto
+    - background-color: cambia el color de fondo de un elemento
+    - background-image: añade una imagen de fondo
+    - opacity: controla la opacidad del elemento
+
+- TIPOGRAFÍA:
+    - font-size: controlar el tamaño de fuente.
+    - font family: especifica la familia tipográfica
+    - line-height: cambia el espaciado entre líneas.
+    - font-weight: cambia el peso del texto.
+    - font-style: cambia el estilo del texto (cursiva)
+    - text-align: alinea el texto (left, riggt, center, justify)
+
+- DIMENSIONES
+    - width y height: ancho y alto del elemento.
+    - max-width y max-heigth: dimensiones máximas
+    - min-width y min-heigth: dimensiones mínimas
+
+- ESPACIADO:
+    - padding: controla el espacio interno de un elemento.
+    -margin: controla el espacio externo de un elemento.
+
+- BORDES Y SOMBRAS:
+    - border: controla los bordes de la caja del elemento
+    - box-shadow: aplica sombra paralela a un elemento.
+    - border-radius: permite redondear los vertices de la caja del elemento.
+
+
+
+
+## RESPONSIVE WEB DESIGN
+
+Para crear un layout responsive debemos usar una serie de propiedades y medidas que sigan las directrices de "diseño web responsive". Esto significa pensar principalmente en crear un layout adaptativo que no esté basado solo en medidas fijas (como píxeles). 
+
+Este layout estará creado con propiedades como flexbox o Grid y medidas relativas para que se adapte correctamente a todos los tamaños de pantalla.
+
+El layout adaptativo que generemos también deberá ser responsive, esto significa que reordenará sus elementos cuando sea necesario para adaptarse mejor a la pantalla del usuario.
+
+
+
+MEDIDAS VW Y VH
+
+- VW -> viewport width -> equivale al ancho de la pantalla (viewport) del usuario, el número funciona como un porcentaje.
+- VH -> viewport height -> equivale a la altura de la pantalla (viewport) del usuario, el número funciona como un porcentaje.
+
+La diferencia entre estas medidas y la medida % es que hace referencia al contenedor padre del elemento que tenga una propiedad con un valor con esta medida
+
+
+MEDIDAS EM Y REM
+
+Son dos medidas relativas a un tamaño de fuente:
+
+- em: esta medida es relativa al font-size del elemento padre
+- rem: esta medida es relativa al font-size del elemento raiz (root)
+
+
+
+## FLEXBOX
+
+Se trata de un sistema o conjunto de propiedades para maquetar mi layout siguiendo las directrices responsive
+Guía --> https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+
+
+## MEDIA QUERIES
+
+Para realizar ajustes sobre nuestro layout edaptativo (que habremos maquetado usando propiedades flexbox o grid) usaremos las reglas especiales de CSS -> media-query
+
+Esta regla especial me permite detectar el tamaño de la pantalla del usuario y sobreescribir ciertos selectores y propiedades para adaptar correctamente mi interfaz al tamaño de pantalla del usuario.
+
+Los mediaqueries SIEMPRE se encontrarán al final de nuestro archivo CSS después de mi código base de CSS
+
+Dentro de los paréntesis del media query definimos el breackpoint en píxeles.
+
+Cuando trabajemos con un enfoque desktop-firs (desde grande a pequeño) usaremos la propiedad max-width para definir el breackpoint
+
+Podemos pensarlo como: "cuando la pantalla tenga menos de x píxeles se aplica el siguiente código"
+
+En los media-query solo escribiremos las propiedades que queremos cambiar.
+
+
+
+## TRANSFORMACIONES DE CSS
+
+Se trata de un conjunto de propiedades que me permiten modificar la forma o la posición de un elemento.
+
+Usando las funciones de esta propiedad no midifiaremos elementos adyacentes y además estas propiedades funcionan a traves de la GPU.
+
+Scale()
+translate()
+rotate()
+skew()
+
+
+
+## ANIMACIONES DE CSS
+
+Las animaciones de CSS me permiten crear interpolaciones entre fotogramas clave.
+
+Debemos usar la regla especial @keyframes
+
+
+
+## JAVASCRIPT (VANILLA JAVASCRIPT)
+
+Javascript es un lenguaje de programación de tipo scrpting. Es el único lenguaje de programación que puede ser usado en la parte del cliente cuando estamos desarrollando para una web. JS es interpretado por el navegador web. Es un lenguaje que no necesita ser compulado y es debilmente tipado.
+
+Tenemos 3 formas distintas de cargar código de JS en nuestra web.
+
+1) Directamente en los elementos HTML a traves de eventos en forma de atributos.
+
+2) Usando el elemento de HTML <script></script> y añadiendo código de JS dentro de ellas. Podemos cargar este elemento el código de JS en el <head></head> de nuetro HTML (esto lo reservaremos para cargar librerías de JS externas) o al final del <body></body> justo antes de que se cierre la etiqueta (esta forma es más correcta ya que permite que se haya cargado todo el HTML de la web).
+
+3) Enlazar un archivo externo de JS en nuestro código.
+
+Para crear comentarios de JS ctr + ç o // delante de cada línea
+
+VARIABLES DE JS:
+
+Para declarar una variable de JS (V5) USAREMOS LA PALABRA RESERVADA -> var
+
+1) Declaramos la variable y le damos un nombre.
+
+2) Asignamos un valor con el símbolo =
+
+3) Llamar a la variable o "invocarla" o refrenciarla.
+
+Los nombres de la variables solo pueden contener letras, números y _ (guión bajo). 
+
+Actualmente existen 3 formas diferentes de declarar variables de JS:
+
+- var (v.5)
+
+- let (v.6) -> sustituye a var
+
+- const (v.6) -> este tipo de variables (constantes) no permiten re-asignar un nuevo valor
+
+
+
+TIPOS DE DATOS EN JS:
+
+- String (cadena de caracteres o texto para los amigos) -> puede contener: letras, números, caracteres especiales y espacios. Siempre estará contenido entre comillas dobles o simples.
+
+- Number (números) -> tenemos números enteros (integer) y números decimales (float) siempre con un punto (.) nunca con una coma (,).
+
+- Boolean -> valores booleanos true y false (El hecho de que una variable exista se traduce también como true) -> 1 == true y 0 == false.
+
+- Array (listado) [] -> Se trata de un tipo de dato que me permite crear un conjunto de otros tipos de datos. Estos datos que contiene un array pueden ser todos del mismo tipo o de diferentes tipos.
+
+- Object (objeto) {} -> Es un tipo de dato complejo que me permite guardar de forma ordenada otros tipos de datos siguiendo el formato -> clave: valor (key, value)
+
+COMPARACIONES DE JS:
+
+- Mayor que >
+- Menor que <
+- Mayor o igual que >=
+- Menor o igual que <=
+- Igual que ==
+- Totalmente igual que === (Compara contenido y tipo de dato)
+- Diferente que !=
+- Totalmente diferente que !==
+
+
+
+OPERADORES LÓGICOS O PUERTAS LÓGICAS
+- AND lógico -> &&
+- OR lógico -> ||
+- NOT lógico -> !
+
+
+
+FUNCIONES DE JAVASCRIPT
+
+Una función es un conjunto de instrucciones o líneas de código que cumplen un cometido determinado.
+
+Las funciones de JS trabajan como una "caja negra" muchas veces. Nosotros llamamos o usamos una función porque sabemos que es lo que hace, pero internamente no sabemos como funciona.
+
+Muchas funciones trabajan dandonos un output o resultado de su trabajo y muchas otras funciones nacesitan de un input para poder trabajar y darme un output.
+
+En JS tenemos 2 tipos de funciones:
+
+1) Las funciones de JS ya definidas dentro del código interno del lenguaje que nosotros podemos llamar y usar. Por ejemplo las funciones alert() y log() son funciones de este tipo que se conocen como funciones built-in.
+2) Las funciones que nosotros mismos definimos en nuestro código.  JS nos permite crear nuevas funciones y usarlas tantas veces como necesitemos.
+
+Para crear una función própia, vamos a seguir estos pasos:
+
+1. Declaramos la función con la palabra reservada "function"
+
+2. Le damos un nombre a la función. El nombre lo elegimos nosotros y debe representar de forma clara el trabajo que cumple esta función. El nombre de la función incluye unos paréntesis al final.
+
+3. Escribir el código interno de esta función.
+
+4. Llamar o invocar a la función.
+
+
+
+SELECTORES DE JS:
+
+Cuando queramos generar una interacción en una nuestra web necesitaremos seleccionar el o los elementos que van a modificarse o a lanzar el evento que activará esta interacción
+
+Todos los elementos de mi web que conforman el HTM y a los que podemos acceder desde JS se denominan DOM (document object model).
+
+A través de la variable global "document" (que ya está definida automaticamente cuando se carga la web) podremos acceder a cualquier nodo del DOM, es decir, podremos seleccionar con JS cualquier elemento del HTML.
+
+- getElementById() -> Selecciona elementos por id
+- getElementsByTagName() -> Selecciona elementos por nombre de etiqueta y genera un array
+- getElementsByClassName() -> selecciona elementos por nombre de clase y genera un array
+
+Selectores tipo query funcionan recibiendo como parámetro un selector de CSS.
+
+- querySelectorAll() -> lo usaremos cuando necesitemos seleccionar varios elementos del DOM
+- querySelector()
+
+
+
+SETTERS Y GETTERS
+
+Cuando seleccionamos un elemento del DOM con JS podemos obtener los valores que guarda ese elemento o podemos modificar esos valores.
+
+
+
+EVENTOS DE JS:
+
+Con los eventos de JS podemos detectar cuando ocurre algo en nuestra web y nosotros responder a ese evento con alguna acción programada desde JS.
+
+- Detectar cuando la web se ha cargado completamente.
+- Detectar cuando un campo input cambia y pasa a tener otro valor.
+- Detectar el scroll del usuario y hacer algo en respuesta.
+- Detectar un click (o un doble click).
+- Detectar el hover sobre un elemento (mouseover y mouseout).
+
+Aunque podemos definir eventos directamente en el HTML a traves de los eventos tipo on{nombre_evento} como atributos de un elemento de HTML, lo más correcto es no mezclar los diferentes lenguajes y declarar estos eventos en el archivo de JS.
+
+Para esto usaremos la función addEventListener()
+
+
+
+ICONOS DE FONT AWESOME:
+
+Para cargar en nuestra web los iconos de font-awesome tenemos que importarlos en nuestro html.
+
+Podemos usar un servidor CDN para cargar este recurso.
+
+podemos obtener este link buscando en google -> cdnjs font-awesome
+
+cuando tenemos seleccionado un elemento podemos acceder a su listado de clases con la propiedad elemento.classList

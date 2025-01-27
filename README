@@ -2,3 +2,12 @@ Todos los nombres de variables usando este formato "estaEsUnaVariable"
 Todos los nombnres de funciones usando este formato "EstaEsUnaFuncion(){}"
 Todos los nombres de clases usando este formato "esta_es_una_clase"
 Todos los nombres de id usando este formato "este_es_un_id"
+
+
+<!-- El JQUERY -->
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<!-- El Jquery UI -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+IMPORTANTE 
+Cargar los archivos en este orden, sino, da bugs

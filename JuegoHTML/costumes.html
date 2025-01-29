@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider de Color, Saturación y Luminosidad</title>
+    <link rel="stylesheet" href="../CSS/costumesCSS.css">
+    <!-- Importar jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Personaje que cambia de color -->
+        <div class="character" id="character"></div>
+
+        <!-- Controles de los sliders -->
+        <div class="controls">
+            <label>Color (Tono)
+                <input type="range" id="hue" min="0" max="360" value="0">
+            </label>
+            <label>Saturación
+                <input type="range" id="saturation" min="0" max="200" value="100">
+            </label>
+            <label>Brillo
+                <input type="range" id="brightness" min="50" max="200" value="100">
+            </label>
+        </div>
+    </div>
+    <!-- Enlaces a jquery y a jqueryUI -->
+     <!-- Jquery normal -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- Jquery UI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Importar script.js -->
+    <script src="../JS/costumes.js"></script>
+</body>
+</html>
+

@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-*{
+* {
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
 }
 
 
-body{
+body {
     background-image: url(../Media/Img/background_1.avif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +19,7 @@ body{
     height: 100vh;
 }
 
-.main-menu{
+.main-menu {
     display: flex;
     padding: 5rem;
     margin: 5vh;
@@ -28,34 +28,39 @@ body{
     align-items: center;
 }
 
-.main-menu img{
-    width:40vw;
+.main-menu img {
+    width: 40vw;
     height: 40vh;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-
+    margin-left: 5vw;
 }
 
-#button{
-  height:100px;
-  width: 300px;
-  display: flex;
-justify-content: center;
-align-items: center;
-margin: 10px 10px;
+#button {
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 15px;
 }
 
-h1{
+h1 {
     text-align: center;
     color: whitesmoke;
     font-family: "Kanit", serif;
     font-weight: 700;
     font-style: normal;
-    -webkit-text-stroke: 0.1vw black;
-    font-size: 64px  ;
+    -webkit-text-stroke: 3px black;
+    font-size: 64px;
+}
+
+h1:hover {
+    color: #114711;
+    -webkit-text-stroke: 0.1vw #ffa500;
 }

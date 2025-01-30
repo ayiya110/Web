@@ -1,4 +1,6 @@
 $(document).ready(function(){
-    console.log("Documento cargado");
-    
+    let buttonSettings = $("#settings");
+    buttonSettings.click(function(){
+        console.log("ready");
+    })   
 })

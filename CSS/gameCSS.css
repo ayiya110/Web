@@ -50,6 +50,10 @@ body {
     margin: 5px 15px;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     text-align: center;
     color: whitesmoke;
@@ -64,3 +68,26 @@ h1:hover {
     color: #114711;
     -webkit-text-stroke: 0.1vw #ffa500;
 }
+
+
+
+/*Media Queries*/
+
+/*ORDENADORES*/
+@media only Desktop and (min-width: 1180){
+    h1 {
+        background-color: lightblue;
+    }
+}
+/*TABLET*/
+@media only Desktop and (max-width: 1180){
+    h1 {
+        background-color: orange;
+    }
+} 
+/*MOBILE*/
+@media only Desktop and (max-width: 375){
+    h1 {
+        background-color: greenyellow;
+    }
+} 

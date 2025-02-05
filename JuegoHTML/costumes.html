@@ -12,13 +12,22 @@
 
     <div class="container">
         <!-- Personaje que cambia de color -->
-        <div class="character" id="character"></div>
+        <div class="character" id="character">
+            
+
+        </div>
 
         <!-- Controles de los sliders -->
+        <!-- https://codepen.io/simoncoudeville/pen/MPLwMe -->
         <div class="controls">
-            <label>Color (Tono)
-                <input type="range" id="hue" min="0" max="360" value="0">
-            </label>
+            <h1>Customice your beast</h1>
+            <div class="c-range">  
+                <div class="c-range__holder">    
+                  <input class="c-range__slider js-range-input" id="hue" type="range" value="50" max="360">
+                  <output class="c-range__output js-range-output" for="hue"></output>
+                </div>
+                <label class="c-range__label" for="hue"></label>
+              </div>
             <label>Saturación
                 <input type="range" id="saturation" min="0" max="200" value="100">
             </label>

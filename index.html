@@ -54,18 +54,39 @@
 
     <div class="registro">
         <h1 id="registro">Register to the Betas</h1>
-        <h3>Please fill out this form to sign up to the upcoming BETA test of "Gang Beasts" and upcoming news</h3>
-        <div>
-            <h2>EMAIL ADRESS</h2>
-            <p>By proving us with this email, you are confirming that you are above 18 years of age(or the minimal age corresponding to your place of residence) and authorize the use of your data according to our 
+        <p>Please fill out this form to sign up to the upcoming BETA test of "Gang Beasts" and upcoming news</p>
 
-            Privacy Policy
-            </p>
+        <label for="email">EMAIL ADRESS</label>
+        <input type="email" id="email" placeholder="Introduce tu email">
+        <p class="privacy-text">By proving us with this email, you are confirming that you are above 18 years of age(or the minimal age corresponding to your place of residence) and authorize the use of your data according to our <a href="#">Privacy Policy</a></p>
 
+        <label for="region">REGION</label>
+        <select id="region">
+            <option value="">Select your region</option>
+            <option value="América">Select your region</option>
+            <option value="Europe">Select your region</option>
+            <option value="Asia">Select your region</option>
+            <option value="Oceania">Select your region</option>
+            <option value="Africa">Select your region</option>
+            <option value="Antartica">Select your region</option>
+        </select>
 
+        <label>WHAT OTHER GAMES GAVE YOU PLAYED?</label>
+        <div class="checkbox-gamesplayed">
+            <label><input type="checkbox"> Real-time Strategy Games(Age of Empires,Starcraft II, etc)</label>
+            <label><input type="checkbox"> MOBA (Brawl Stars, Pokemon Unite, etc)</label>
+            <label><input type="checkbox"> Strategy Games(  Civilization VI,Crusader Kings,etc)</label>
+            <label><input type="checkbox"> None of the above</label>
         </div>
+        <p class="privacy-text">By selecting and submiting any of the above answers, you acknoledge to the processing of this information in accordance with the <a href="#">Privacy Policy</a></p>
 
-        <div class="contenedor_registro"></div>
+        <label class="checkbox-inline">
+            <input type="checkbox">I would like to recive the latest notifications and news about Locket Entertainment and Gang Beast by email
+        </label>
+
+        <button type="submit">Register</button>
+
+        <!-- <div class="contenedor_registro"></div> -->
 
     </div>
     

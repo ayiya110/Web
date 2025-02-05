@@ -16,7 +16,7 @@ $(document).ready(function(){
       }); 
       let PageLink = $("#quit");
       PageLink.click(function(){
-          window.location.href="../JuegoHTML/inde.html";
+          window.location.href="../index.html";
           st
       }); 
 })

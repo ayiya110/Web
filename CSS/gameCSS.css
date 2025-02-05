@@ -2,6 +2,8 @@
 
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
@@ -9,7 +11,7 @@
 
 
 body {
-    background-image: url(../Media/Img/background_1.avif);
+    background-image: url(../Media/Img/background_1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -19,7 +21,7 @@ body {
     height: 100vh;
 }
 
-.main-menu {
+.main-screen {
     display: flex;
     padding: 5rem;
     margin: 5vh;
@@ -28,9 +30,11 @@ body {
     align-items: center;
 }
 
-.main-menu img {
+.main-screen div img {
     width: 40vw;
-    height: 40vh;
+    height: auto;
+
+    user-select: none;
 }
 
 .menu {
@@ -41,17 +45,16 @@ body {
     margin-left: 5vw;
 }
 
-#button {
-    height: 100px;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px 15px;
+.menu div {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
-a {
-    text-decoration: none;
+.menu a {
+    width: 300px;
+    height: 100px;
+    transition: 0.3s;
+    user-select: none;
 }
 
 h1 {
@@ -60,34 +63,46 @@ h1 {
     font-family: "Kanit", serif;
     font-weight: 700;
     font-style: normal;
-    -webkit-text-stroke: 3px black;
-    font-size: 64px;
+    -webkit-text-stroke: 4px black;
+    font-size: 4rem;
 }
 
 h1:hover {
     color: #114711;
     -webkit-text-stroke: 0.1vw #ffa500;
+    cursor: pointer;
 }
 
 
 
 /*Media Queries*/
 
-/*ORDENADORES*/
-@media only Desktop and (min-width: 1180){
-    h1 {
-        background-color: lightblue;
+/* TABLET */
+@media (max-width: 1180px){
+    .menu div {
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
     }
+
+    h1 {
+        -webkit-text-stroke: 3px black;
+        font-size: 3rem;
+    }
+
 }
-/*TABLET*/
-@media only Desktop and (max-width: 1180){
-    h1 {
-        background-color: orange;
+
+
+/* MOVILE */
+@media (max-width:667px){
+
+    .menu div {
+        padding-top: 0.2rem;
+        padding-bottom: 0.22rem;
     }
-} 
-/*MOBILE*/
-@media only Desktop and (max-width: 375){
+
     h1 {
-        background-color: greenyellow;
-    }
-} 
+        -webkit-text-stroke: 1.5px black;
+        font-size: 1.75rem;
+    } 
+    
+}

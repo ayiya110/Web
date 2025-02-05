@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.character {
+    width: 150px;
+    height: 200px;
+    background: red; /* Color base */
+    border-radius: 20px;
+    transition: filter 0.2s ease-in-out;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="range"] {
+    width: 200px;
+}

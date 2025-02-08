@@ -54,37 +54,74 @@
 
     <div class="registro">
         <h1 id="registro">Register to the Betas</h1>
-        <p>Please fill out this form to sign up to the upcoming BETA test of "Gang Beasts" and upcoming news</p>
+        <p class="info">Please fill out this form to sign up to the upcoming BETA test of "Gang Beasts" and upcoming news</p>
 
-        <label for="email">EMAIL ADRESS</label>
-        <input type="email" id="email" placeholder="Introduce tu email">
-        <p class="privacy-text">By proving us with this email, you are confirming that you are above 18 years of age(or the minimal age corresponding to your place of residence) and authorize the use of your data according to our <a href="#">Privacy Policy</a></p>
+        <label for="email" id="titulo">EMAIL ADDRESS</label>
+        <input type="email" id="email" placeholder="Introduce your email">
+        <p class="privacy-text">By providing us with this email, you are confirming that you are above 18 years of age(or the minimal age corresponding to your place of residence) and authorize the use of your data according to our <a href="#">Privacy Policy</a></p>
 
-        <label for="region">REGION</label>
+        <label for="region" id="titulo">REGION</label>
         <select id="region">
-            <option value="">Select your region</option>
-            <option value="América">Select your region</option>
-            <option value="Europe">Select your region</option>
-            <option value="Asia">Select your region</option>
-            <option value="Oceania">Select your region</option>
-            <option value="Africa">Select your region</option>
-            <option value="Antartica">Select your region</option>
+            <option value="" disable selected>Select your region</option>
+            <option value="America">America</option>
+            <option value="Europe">Europe</option>
+            <option value="Asia">Asia</option>
+            <option value="Oceania">Oceania</option>
+            <option value="Africa">Africa</option>
+            <option value="Antartica">Antartica</option>
         </select>
 
-        <label>WHAT OTHER GAMES GAVE YOU PLAYED?</label>
+        <form>
+            <label for="games-played">WHAT OTHER GAMES HAVE YOU PLAYED?</label>
+            
+            <fieldset class="checkbox-gamesplayed">
+                <legend>Select the game genres you've played:</legend>
+                
+                <label for="rts">
+                    <input type="checkbox" id="rts" name="games_played"> Real-time Strategy Games (Age of Empires, Starcraft II, etc)
+                </label>
+                
+                <label for="moba">
+                    <input type="checkbox" id="moba" name="games_played"> MOBA (Brawl Stars, Pokémon Unite, etc)
+                </label>
+                
+                <label for="strategy">
+                    <input type="checkbox" id="strategy" name="games_played"> Strategy Games (Civilization VI, Crusader Kings, etc)
+                </label>
+                
+                <label for="none">
+                    <input type="checkbox" id="none" name="games_played"> None of the above
+                </label>
+            </fieldset>
+        
+            <p class="privacy-text">
+                By selecting and submitting any of the above answers, you acknowledge the processing of this information in accordance with the 
+                <a href="#">Privacy Policy</a>.
+            </p>
+        
+            <label class="checkbox-inline">
+                <input type="checkbox" id="newsletter"> 
+                <span>I would like to receive the latest notifications and news about Locket Entertainment and Gang Beast by email</span>
+            </label>
+        
+            <button type="submit">Register</button>
+        </form>
+        
+
+        <!-- <label>WHAT OTHER GAMES HAVE YOU PLAYED?</label>
         <div class="checkbox-gamesplayed">
             <label><input type="checkbox"> Real-time Strategy Games(Age of Empires,Starcraft II, etc)</label>
             <label><input type="checkbox"> MOBA (Brawl Stars, Pokemon Unite, etc)</label>
             <label><input type="checkbox"> Strategy Games(  Civilization VI,Crusader Kings,etc)</label>
             <label><input type="checkbox"> None of the above</label>
         </div>
-        <p class="privacy-text">By selecting and submiting any of the above answers, you acknoledge to the processing of this information in accordance with the <a href="#">Privacy Policy</a></p>
+        <p class="privacy-text">By selecting and submiting any of the above answers, you acknowledge to the processing of this information in accordance with the <a href="#">Privacy Policy</a></p>
 
         <label class="checkbox-inline">
-            <input type="checkbox">I would like to recive the latest notifications and news about Locket Entertainment and Gang Beast by email
+            <input type="checkbox">I would like to receive the latest notifications and news about Locket Entertainment and Gang Beast by email
         </label>
 
-        <button type="submit">Register</button>
+        <button type="submit">Register</button> -->
 
         <!-- <div class="contenedor_registro"></div> -->
 

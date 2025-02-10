@@ -1,6 +1,6 @@
 $(document).ready(function () {
     function updateCharacterStyle() {
-        let hue = $("#hue").val();
+        // let hue = $("#hue").val();
         let saturation = $("#saturation").val();
         let brightness = $("#brightness").val();
 
@@ -13,24 +13,24 @@ $(document).ready(function () {
 
 
 // Para revisar
-const rangeInput = document.querySelector('.js-range-input');
-const output = document.querySelector('.js-range-output');
-const root = document.documentElement;
+$(document).ready(function() {
+  const $rangeInput = $(".js-range-input");
+  // const $output = $('.js-range-output');
+  const $root = $(":root");
 
-function setHue() {
-  output.value = rangeInput.value + '°';
-  root.style.setProperty('--hue', rangeInput.value);
-}
+  function setHue() {
+      // $output.val($rangeInput.val() + '°');
+      $root.css("--hue", $rangeInput.val());
+  }
 
-function setDefaultState() {
-  rangeInput.focus();
-  setHue();
-}
+  function setDefaultState() {
+      $rangeInput.focus();
+      setHue();
+  }
 
-rangeInput.addEventListener('input', function(){
-  setHue();
-});
+  $rangeInput.on("input", function() {
+      setHue();
+  });
 
-document.addEventListener('DOMContentLoaded', function(){
   setDefaultState();
 });

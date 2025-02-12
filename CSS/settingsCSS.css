@@ -10,7 +10,7 @@ body{
 
 /* Caja gorda de ajustes */
 .cont-settings {
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
     background-color:bisque;
@@ -45,8 +45,37 @@ body{
 
 /* Sliders */
 .sliders{
-    margin-top: 2.5rem;
+    margin-top: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding-left: 20%;
+    padding-right: 20%;
 }
+
+.hue {
+    -webkit-appearance: none;
+    height: 35px;
+    background: #ffffff;
+    color:rgb(168, 168, 168);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    width: 50vh;
+}
+
+.hue::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: reound;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #c4c4c4;
+    cursor: pointer;
+}
+  
+
 
 /* Zona de los botones de abajo */
 .save-return{
@@ -55,6 +84,7 @@ body{
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+    
 }
 
 button{
@@ -77,4 +107,101 @@ button:hover{
     color: green;
     -webkit-text-stroke: 2px orange;
     transition: 0.3s;
+}
+
+
+/* tamaño ordenador
+ancho: 1440
+alto: 1024
+
+Tamaño tablet
+ancho 1180
+alto 820
+
+Movil (horizontal)
+alto 375
+ancho 667*/
+
+/* TABLET */
+@media (max-width: 1180px){
+    .cont-settings{
+    margin-top: 7%;
+    }
+
+}
+
+
+/* MOVILE */
+@media (max-width:667px){
+
+    /* Zona general */
+    .cont-settings{
+        margin-top: 0vh;
+    }
+
+    /* Título */
+    #title{
+        font-size: 9vh;
+        color: white;
+        -webkit-text-stroke: 0.5vh black;
+    }
+
+    .forTitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+    }
+
+    /* Párrafos */
+    .parts{
+        font-weight: bold;
+        font-size: 6.5vh;
+        flex-direction: row;
+        margin-left: 10%;
+        padding-bottom: 0%;
+    }
+
+    p{
+        margin: 3vh;
+    }
+
+    /* Sliders */
+    .sliders{
+        margin-top: 4vh;
+        display: flex;
+        flex-direction: column;
+        gap: 3.75vh;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .hue {
+        -webkit-appearance: none;
+        height: 5vh;
+        background: #ffffff;
+        color:rgb(168, 168, 168);
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        width: 50vh;
+    }
+    
+    .hue::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        background: #c4c4c4;
+        cursor: pointer;
+    }
+
+    /* Botones */
+
+    button{
+        width: 50vh;
+        height: auto;
+        font-size: 10vh;
+    }
 }

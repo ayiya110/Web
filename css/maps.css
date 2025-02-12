@@ -1,3 +1,10 @@
+*{ /*Estilo de la fuente*/
+    font-family: 'Kanit', sans-serif;
+    color: white; 
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black,  0 -2px 0 black, 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black; 
+}
+
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -18,20 +25,35 @@ body {
     height: 200px; 
     border: 2px solid #333; 
     border-radius: 10px;
-    position: relative; /* Necesario para posicionar la imagen dentro */
-    opacity: 1; /* Opacidad normal por defecto */
-    transition: opacity 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Transición suave */
+    position: relative; 
+    overflow: hidden; 
+    transition: opacity 0.3s ease-in-out, border-color 0.3s ease-in-out; /*Animacion transparencia*/
 }
 
 .imagen-mapa {
-    width: 100%;  /* La imagen ocupará todo el contenedor */
+    width: 100%;  
     height: 100%;
-    object-fit: cover; /* La imagen cubre todo el espacio del contenedor */
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0; /* Asegura que la imagen esté por debajo del texto y borde */
-    transition: filter 0.3s ease-in-out; /* Transición suave para el filtro */
+    z-index: -1; /*Para que la imagene este detras del texto*/
+    transition: filter 0.3s ease-in-out;
+    pointer-events: none; 
+}
+
+.texto-seleccionado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 h1{

@@ -1,11 +1,11 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-image:url("/Media/Img/background_1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
+} */
 
 .mapas {
     display: grid;
@@ -40,7 +40,7 @@ body {
 
 h1{
     margin-top: 3rem;
-    margin-bottom: 0px;
+    margin-bottom: 3px;
 }
 
 .players{

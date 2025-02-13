@@ -1,6 +1,18 @@
+* { 
+    /* Estilo de la fuente */
+    font-family: 'Kanit', sans-serif;
+    color: white; 
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black,  0 -2px 0 black, 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black; 
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    background-image: url('../Media/Img/background_1.avif'); 
+    background-size: cover;  
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
 }
 
 .mapas {
@@ -10,7 +22,7 @@ body {
     max-width: 600px; 
     margin: auto; 
     padding: 20px;
-    background-image:"../Media/Img/background_1.avif";
+    z-index: 1; /* Mantiene los mapas por encima del fondo */
 }
 
 .mapa {
@@ -18,50 +30,74 @@ body {
     height: 200px; 
     border: 2px solid #333; 
     border-radius: 10px;
-    position: relative; /* Necesario para posicionar la imagen dentro */
-    opacity: 1; /* Opacidad normal por defecto */
-    transition: opacity 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Transición suave */
+    position: relative; 
+    overflow: hidden; 
+    transition: opacity 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Animación de transparencia */
 }
 
 .imagen-mapa {
-    width: 100%;  /* La imagen ocupará todo el contenedor */
+    width: 100%;  
     height: 100%;
-    object-fit: cover; /* La imagen cubre todo el espacio del contenedor */
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0; /* Asegura que la imagen esté por debajo del texto y borde */
-    transition: filter 0.3s ease-in-out; /* Transición suave para el filtro */
+    z-index: -1; /* Hace que la imagen esté detrás del texto */
+    transition: filter 0.3s ease-in-out;
+    pointer-events: none; /* Previene la interacción con la imagen */
 }
 
-h1{
+.texto-seleccionado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h1 {
     margin-top: 7rem;
     margin-bottom: 0px;
 }
 
-.players{
+.players {
     margin-top: 0rem;
     margin-bottom: 50px;
     text-align: center;
     display: flex;
 }
 
-.play{
-    margin-top: 2;
+.play {
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
-    
 
-.player{
+.player {
     width: 50px; 
     height: 50px; 
     background-color: lightgray; 
     border: 2px solid #333; 
     border-radius: 50%;
     margin: 1rem;
+    display: flex; /* Usamos flexbox */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    overflow: hidden; /* Asegura que la imagen no se desborde del borde redondeado */
 }
 
-.jugadores{
+.player img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: 100%; /* La imagen ocupa el 100% de la altura del contenedor */
+    object-fit: cover; /* Hace que la imagen se ajuste correctamente dentro del contenedor sin distorsionarse */
+}
+
+.jugadores {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;

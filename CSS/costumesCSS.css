@@ -364,3 +364,10 @@ input[type="range"] {
     opacity: 1;
   }
   
+
+
+/* Selector de personajes */
+  .selector_list {
+    display: flex;
+    flex-direction: row;
+  }

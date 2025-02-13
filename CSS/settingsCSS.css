@@ -1,10 +1,18 @@
-/* Ajustes generales */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-family: "Kanit", serif;
+    font-weight: 700;
+    font-style: normal;
+    -webkit-text-stroke: 2px black;
+
 }
 
 body{
-    background-image: url(../Media/Img/placeholder.webp);
+    background-image: url(../Media/Img/background_2.webp);
+    background-size: cover;  
+    background-attachment: fixed; 
 }
 
 
@@ -13,7 +21,7 @@ body{
     margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
-    background-color:bisque;
+    background-color:transparent;
 }
 
 .settings{
@@ -67,12 +75,13 @@ body{
 
 .hue::-webkit-slider-thumb {
     -webkit-appearance: none;
-    appearance: reound;
+    appearance: round;
     width: 35px;
     height: 35px;
     border-radius: 50%;
     background: #c4c4c4;
     cursor: pointer;
+
 }
   
 

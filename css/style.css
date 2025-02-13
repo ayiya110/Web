@@ -1,97 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
 }
-nav .menu-flex{
-    list-style: none;
-    padding: 1rem;
-    background-color: blueviolet;
+
+body{
+    margin: 0;
+}
+
+h1{
+     font-family: "Kanit",serif;
+     font-size: 7rem;
+}
+
+.background{
+    position: fixed;
+    width: 50%;
+    height: auto;
+    background: url('fondo-web.webp') no-repeat center center/cover;
+    z-index: -1;
+}
+.header-container {
     display: flex;
-    justify-content: space-around;
-}
-
-.inicio {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-end;
-    padding: 4rem 7rem 7rem 7rem;
-    height: 100vh;
-}
-
-.contenedor_inicio {
-    width: 26.5rem;
-    height: 15rem;
-    background-color: #3498db;
-}
-
-.texto {
-    color: black;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.bienvenida{
-    background-color: rgb(45, 30, 56);
-    display: flex;
-    flex-wrap: wrap;
-    padding: 4rem 7rem 7rem 7rem;
-    height: 100vh;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
 }
-
-
-#bienvenida{
-    color: white;
-    text-align: center;
-    padding: 0rem 7rem 0rem 7rem;
-}
-
-.contenedor_bienvenida{
-    width: 40rem;
-    height: 15rem;
-    background-color: #3498db;
-    margin-top: 4rem;
-}
-
-.mision{
-    background-color: rgb(100, 26, 78);
-    height: 100vh;
-    padding: 4rem 7rem 7rem 7rem;
-    text-align: center;
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 20px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-start;
-}
+    z-index: 1000;
 
-#mision{
-    padding: 0rem 7rem 0.5rem 7rem;
+    background: linear-gradient(to right, rgba(128, 0, 128, 0.8), rgba(255, 20, 147, 0.8));
+    backdrop-filter: blur(10px);
+} 
+nav ul{
+    list-style:none;
     display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+    gap: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(236,226,226);
+    font-weight: bold;
     
 }
 
-.contenedor_mision{
-    width: 40rem;
-    height: 20rem;
-    background-color: #3498db;
-    margin-top: 4rem; 
+/* Botones */
+.menu-button{
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: all 0.3s ease-in-out;
+}
+.menu-button:hover {
+    background: limegreen;
+    color: black;
+    border-color: limegreen;
+    transform: scale(1.1);
+}
+.beta-button {
+    background: limegreen;
+    color: black;
+    border-color: limegreen;
+}
+
+.beta-button:hover {
+    background: white;
+    color: black;
+    border-color: white;
+}
+
+
+
+.intro {
+    position: relative;
     text-align: center;
+}
+
+.intro img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 30%;
+}
+
+.overlay button {
+    background: #9d4edd;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-size: 2rem ;
+}
+
+/* Welcome  */
+.welcome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgb(45, 30, 56);
+}
+
+.welcomeh1 {
+    color: white;
+    text-align: center;
+    padding: 0rem 7rem 0rem 7rem;
+    font-size: 3rem;
+}
+
+#welcome{
+    color: white;
+    text-align: center;
+    padding: 0rem 7rem 0rem 7rem;
+    font-size: 2rem;
+}
+
+.welcome img {
+    width: 60%;
+    margin-top: 20px;
+}
+
+/* Mission Section */
+.mission {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 4rem 7rem 7rem 7rem;
+    background-color: rgb(100, 26, 78);
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+.missionh1 {
+    color: white;
+    text-align: center;
+    padding: 0rem 7rem 0rem 7rem;
+    font-size: 5rem;
+}
+
+#mission{
+    color: white;
+    text-align: center;
+    padding: 0rem 5rem 5rem 5rem;
+    font-size: 4.5rem;
+}
+
+.mission .highlight {
+    color: lime;
+    font-weight: bold;
 }
 
 .equipo{
     background-color: rgb(45, 30, 56);
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     padding: 4rem 7rem 7rem 7rem;
-    height: 100vh;
+    height: 75vh;
     align-items: center;
     justify-content: center;
 }
@@ -100,6 +187,7 @@ nav .menu-flex{
     color: white;
     text-align: center;
     padding: 0rem 7rem 0rem 7rem;
+    font-size: 2rem;
 }
 
 .contenedor_equipo{
@@ -120,7 +208,7 @@ nav .menu-flex{
     display: flex;
     flex-direction: column;
     padding: 4rem 6rem 6rem 6rem;
-    height: 150vh;
+    height: 100vh;
 }
 
 #registro{
@@ -223,7 +311,7 @@ button:hover {
 /* FOOTER */
 
 footer{
-    background: linear-gradient(to right, #4a0072,#9d4edd,#6a0dad);
+    background: linear-gradient(to right, #4f3061,#9a4adb,#4f3061);
     padding:20px 0;
 }
 
@@ -237,7 +325,7 @@ footer{
 }
 
 .logo img {
-    width: 100px;
+    width: 150px;
     border-radius: 10px;
 }
 
@@ -252,9 +340,9 @@ footer{
 }
 
 .social h3, .navigation h3 {
-    font-size: 18px;
+    font-size: 2rem;
     font-weight: bold;
-    color: white;
+    color: rgb(236, 226, 226);
     margin-bottom: 10px;
 }
 
@@ -280,12 +368,15 @@ footer{
 
 .navigation ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(236, 226, 226);
     font-weight: bold;
+    font-size: 2rem;
+    
 }
 
 .navigation ul li a:hover {
     text-decoration: underline;
+    
 }
 
 

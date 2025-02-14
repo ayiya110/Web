@@ -400,7 +400,7 @@ footer{
 /* MEDIA QUERIES */
 
 /* PC */
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
     h1 {
         font-size: 5rem;
     }
@@ -480,6 +480,7 @@ footer{
     }
     
 }
+/* Tablet */
 
 @media screen and (max-width: 1180px) {
     h1 {
@@ -565,11 +566,12 @@ footer{
     }
 }
 
-
+/* Movil */
 @media screen and (max-width: 375px) {
     h1 {
         font-size: 2.5rem;
         text-align: center;
+        -webkit-text-stroke: 2px black;
     }
 
     .menu-button {
@@ -661,6 +663,10 @@ footer{
     .navigation ul {
         flex-direction: column;
         align-items: center;
+    }
+
+    h2{
+        -webkit-text-stroke: 2px black;
     }
 }
 

@@ -8,35 +8,157 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <ul class="menu-flex">
-            <li>
-                <a href="#">Misión</a>
-            </li>
-            <li>
-                <a href="#">¿Quienes somos?</a>
-            </li>
-            <li>
-                <a href="#">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="inicio">
-        <div class="contenedor_inicio"></div>
-        <p class="texto">hola</p>
-    </div>
-    <div class="mision">
-        <h1>
-            Mision
-        </h1>
-        <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga saepe velit vitae eligendi illum minima expedita inventore sequi voluptatem nostrum, quia accusantium, recusandae praesentium suscipit obcaecati facilis magni, tempore ipsum?
-        </h2>
-        <div class="contenedor_mision"></div>
-        
-        
-    </div>
-    
+    <div class="background"></div>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="Media/Img/Icons/boneloaf-icon.webp">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#welcome" class="menu-button">Gang Beasts</a></li>
+                    <li><a href="#mission" class="menu-button">Mission</a></li>
+                    <li><a href="#equipo" class="menu-button">Who we are</a></li>
+                    <li><a href="#footer-container" class="menu-button">Contacts</a></li>
+                </ul>
+            </nav>
+            <a href="#registro" class="menu-button beta">Join the Beta</a>
+        </div>      
+    </header>
 
+    <div class="intro">
+        <img src="Media/Img/Landing/fondo-web.webp" alt="Gang Beasts">
+        <div class="overlay">
+            <img src="Media/Img/Landing/logogang-beast.webp" alt="Gang Beasts Logo">
+            <button class="button-intro">FIND OUT MORE</button>
+        </div>
+    </div>
+
+    <div class="welcome">
+        <h1 class="welcomeh1">WELCOME TO GANG BEASTS</h1>
+        <p id="welcome">
+            Join us in this silly multiplayer party game and fight for first place. 
+            Discover Junk City and brawl your way through the wacky scenarios you'll find yourself in. 
+            Watch out for the cows!
+        </p>
+        <img src="Media/Img/Landing/img-intro.webp" alt="Gang Beasts PS4">
+    </div>
+
+    <div class="mission">
+        <h1 class="missionh1">OUR MISSION STATEMENT</h1>
+        <p id="mission">We wish to <span class="highlight">bring passion projects to life</span> 
+        which people from all walks of life can enjoy, remember and inspire for the rest of their lives.</p>
+    </div>
+
+        <div class="equipo">
+        <h1 id="equipo">Who we are</h1>
+        <h2 id="equipo">
+            Born in 2018 , our founders and childhood partners Javier García Lobato amd Isaac Venedo Gil opened Locked Entertainment in the heart of the Iberian peninsula. Wanting to promote the game industry in the country, they have realeased titles loved by all, such as ‘Fortdamsel’.
+        </h2>
+        <div class="contenedor_equipo">
+            <img src="Media/Img/Landing/per1.webp" alt="Imagen1">
+            <img src="Media/Img/Landing/per2.webp" alt="Imagen1">
+            <img src="Media/Img/Landing/per3.webp" alt="Imagen1">
+        </div>
+    </div>
+
+    <div class="registro">
+        <h1 id="registro">Register to the Betas</h1>
+        <p class="info">Please fill out this form to sign up to the upcoming BETA test of "Gang Beasts" and upcoming news</p>
+
+        <label for="email" id="titulo">EMAIL ADDRESS</label>
+        <input type="email" id="email" placeholder="Introduce your email">
+        <p class="privacy-text">By providing us with this email, you are confirming that you are above 18 years of age(or the minimal age corresponding to your place of residence) and authorize the use of your data according to our <a href="#">Privacy Policy</a></p>
+
+        <label for="region" id="titulo">REGION</label>
+        <select id="region">
+            <option value="" disable selected>Select your region</option>
+            <option value="America">America</option>
+            <option value="Europe">Europe</option>
+            <option value="Asia">Asia</option>
+            <option value="Oceania">Oceania</option>
+            <option value="Africa">Africa</option>
+            <option value="Antartica">Antartica</option>
+        </select>
+
+        <form>
+            <label for="games-played">WHAT OTHER GAMES HAVE YOU PLAYED?</label>
+            
+            <fieldset class="checkbox-gamesplayed">
+                <legend>Select the game genres you've played:</legend>
+                
+                <label for="rts">
+                    <input type="checkbox" id="rts" name="games_played"> Real-time Strategy Games (Age of Empires, Starcraft II, etc)
+                </label>
+                
+                <label for="moba">
+                    <input type="checkbox" id="moba" name="games_played"> MOBA (Brawl Stars, Pokémon Unite, etc)
+                </label>
+                
+                <label for="strategy">
+                    <input type="checkbox" id="strategy" name="games_played"> Strategy Games (Civilization VI, Crusader Kings, etc)
+                </label>
+                
+                <label for="none">
+                    <input type="checkbox" id="none" name="games_played"> None of the above
+                </label>
+            </fieldset>
+        
+            <p class="privacy-text">
+                By selecting and submitting any of the above answers, you acknowledge the processing of this information in accordance with the 
+                <a href="#">Privacy Policy</a>.
+            </p>
+        
+            <label class="checkbox-inline">
+                <input type="checkbox" id="newsletter"> 
+                <span>I would like to receive the latest notifications and news about Locket Entertainment and Gang Beast by email</span>
+            </label>
+        
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="Media/Img/Icons/boneloaf-icon.webp">
+            </div>
+            <div class="footer-content">
+                <div class="social">
+                    <h3> Follow Us</h3>
+                    <div class="social-Icons">
+                        
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="Media/Img/Icons/instagram-icon.webp" alt="Instagram">
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="Media/Img/Icons/youtube-icon.webp" alt="Youtube">
+                        </a>
+                        <a href="https://x.com/home" target="_blank">
+                            <img src="Media/Img/Icons/x-icon.webp" alt="X">
+                        </a>
+                        <a href="https://discord.com" target="_blank">
+                            <img src="Media/Img/Icons/discord-icon.webp" alt="Discord">
+                        </a>                       
+                    </div>
+                </div>
+                <div class="navigation">
+                    
+                    <ul>
+                        <li><a href="#bienvenida">GANG BEAST</a></li>
+                        <li><a href="#mision">MISSION</a></li>
+                        <li><a href="#equipo">WHO WE ARE</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">CONTACTS</a></li>
+                        <li><a href="#registro">JOIN THE BETA</a></li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </footer>
+    
 </body>
+
 </html>

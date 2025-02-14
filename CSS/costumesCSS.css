@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-*{
-    color: whitesmoke;
-    font-family: "Kanit", serif;
-    font-weight: 700;
-    font-style: normal;
-    -webkit-text-stroke: 2px black;
-
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Kanit", serif;
+  -webkit-text-stroke: 1px rgb(252, 237, 237);
 }
 
 :root {
@@ -26,21 +23,35 @@
   }
 
 body {
-  text-align: center;
-  background-image: url('../Media/Img/background_3.webp'); 
-  background-size: cover;  
-  background-attachment: fixed; 
-  margin: 0;
-  padding: 0;
+  background-image: url(../Media/Img/background_1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;  
+    
+}
+
+.customice_text{
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 10px;
+  border: 10px solid #3b3b3b;
+  gap: 10px;
+
 }
 
 .container {
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    padding: 50px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  
 }
 
 .character {
@@ -49,22 +60,26 @@ body {
     justify-content: center;
     padding: 30px;
     width: 100%;
-    height: 70%;
+    height: 70vh;
     background: transparent; /* Color base */
-    border-radius: 20px;
+    border: #858585;
+    border-radius: 10%;
     box-shadow: var(--box-shadow);
     transition: filter 0.1s ease-in-out;
+    background-color: hsla(0, 0%, 0%, 0.397);
 
 }
 
 .controls {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 70vh;
+  width: 100%;
+  border-radius: 10%;
+  background-color: hsla(0, 0%, 0%, 0.315);
 }
 
 input[type="range"] {
@@ -398,15 +413,14 @@ input[type="range"] {
 }
 
   .avatar {
-    width: 50px;
     width: 5em;
     height: 5em;
-    margin: 5px;
+    margin: 3px;
     cursor: pointer;
     border-color: beige;
-    border: 4px solid rgb(255, 149, 149);
+    border: 2px solid rgb(255, 149, 149);
     border-radius: 50%;
-    border: 2px solid transparent;
+    /* border: 2px solid transparent; */
     box-shadow: var(--box-shadow)
   }
   
@@ -418,7 +432,18 @@ input[type="range"] {
   #selected-avatar {
     width: 75%;
     height: auto;
-    image-resolution: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #757575;
+    border-radius: 10%;
+    height: 70%;
   }
 
   .carousel {
@@ -434,16 +459,15 @@ input[type="range"] {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: burlywood;
+    background-color: #3b3b3b;
     color: white;
     border: 4px solid rgb(255, 255, 255);
     border-radius: 10px;
     padding: 5px 10px;
     cursor: pointer;
-    font-size: 2.5em;
+    font-size: 16px;
     margin: 0 10px;
     box-shadow: var(--box-shadow)
-    
   }
 
   button:hover {
@@ -453,4 +477,187 @@ input[type="range"] {
   .buttons {
     display: flex;
     justify-content: center;
+  }
+
+  .save-return{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6em ;
+    gap: 10px;
+    
+  }
+
+  #save {
+    font-size: 3em;
+  }
+
+  #return {
+    font-size: 3em;
+  }
+
+  /* tamaño ordenador
+  ancho: 1440
+  alto: 1024
+
+  Tamaño tablet
+  ancho 1180
+  alto 820
+
+  Movil (horizontal)
+  alto 375
+  ancho 667*/
+
+  @media (max-width:667px){ 
+    *{
+      box-sizing: initial;
+    }
+
+    body{
+      display: flex;
+      flex-direction: column-reverse;
+      height: auto;
+      margin: 0;
+    }
+
+    .container{
+      padding: 10px;
+      gap: 40px;
+    }
+
+    .controls{
+      gap: 5px;
+      height: 80vh;
+    }
+    .character{
+      height: 65vh;
+      max-width: 65vh;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .c-range{
+      height: auto;
+      max-width: 80%;
+      padding: 4px;
+
+    }
+
+    .c-range__slider{
+      height: auto;
+      min-height: 0;
+    }
+    .c-range__slider::-webkit-slider-thumb {
+      /* margin-top: -10px; */
+      border: 1px solid white;
+      width: 10px;
+      height: 10px;
+    }
+    .c-range__slider::-moz-range-thumb {
+      border: 1px solid white;
+      width: 10px;
+      height: 10px;
+    }
+    .c-range__slider::-ms-thumb {
+      margin-top: 0;
+      border: 1px solid white;
+      width: 10px;
+      height: 10px;
+    }
+    
+
+    .c-range__slider2{
+      height: auto;
+      min-height: 0;
+    }
+    .c-range-saturation{
+      height: auto;
+      max-width: 80%;
+      padding: 4px
+      
+    }
+   
+    .c-range__slider2::-webkit-slider-thumb {
+      /* margin-top: -10px; */
+      border: 1px solid white;
+      width: 10px;
+      height: 10px;
+    }
+    .c-range__slider2::-moz-range-thumb {
+      border: 1px solid white;
+      width: 10px;
+      height: 10px;
+    }
+    .c-range__slider2::-ms-thumb {
+      margin-top: 0;
+      border: 1px solid white;
+      width: 10px;
+      height: 10px;
+    }
+
+    .c-range__slider3{
+      height: 2%;
+      min-height: 0;
+    }
+    .c-range-brightness{
+      height: auto;
+      max-width: 80%;
+      padding: 4px
+      
+    }
+    .c-range__slider3::-webkit-slider-thumb {
+      /* margin-top: -10px; */
+      border: 1px solid white;
+      width: 10px;
+      height: 10px;
+    }
+    .c-range__slider3::-moz-range-thumb {
+      border: 1px solid white;
+      width: 10px;
+      height: 10px;
+    }
+    .c-range__slider3::-ms-thumb {
+      margin-top: 0;
+      border: 1px solid white;
+      width: 10px;
+      height: 10px;
+    }
+
+    .avatar {
+      width: 3em;
+      height: 3em;
+      margin: 3px;
+    }
+
+    .customice_text{
+      background-size: auto;
+      font-size: 1em;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      border-radius: 10%;
+      -webkit-text-stroke: 0;
+      
+    }
+
+    .save-return{
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+    
+    #save{
+      font-size: 1em;
+    }
+
+    #return{
+      font-size: 1em;
+    }
+    
   }

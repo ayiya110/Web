@@ -9,18 +9,17 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-
+    
     <div class="container">
         <!-- Personaje que cambia de color -->
         <div class="character" id="character">
-            <img id="selected-avatar" src="../Media/Img/Avatars/Gato.webp" alt="Avatar seleccionado">
-
+           <img id="selected-avatar" src="../Media/Img/Avatars/Gato.webp" alt="Avatar seleccionado">
         </div>
 
         <!-- Controles de los sliders -->
         <!-- https://codepen.io/simoncoudeville/pen/MPLwMe -->
         <div class="controls">
-            <h1>Customice your beast</h1>
+            <h1 class="customice_text">Customice your beast</h1>
             <div class="c-range">  
                 <div class="c-range__holder">    
                   <input class="c-range__slider js-range-input" id="hue" type="range" value="50" max="360" value="0">
@@ -39,6 +38,7 @@
                 </div>
                 <label class="c-range__label3" for="brightness"></label>
             </div>
+            <h1 class="customice_text">Choose your beast</h1>
             <div class="carousel_container">
                 
                 <div class="carousel">
@@ -60,13 +60,14 @@
                 </div>
                
             </div>
-            <section class="save-return">
-                <button>Save</button>
-                <button id="return">Return</button>
-            </section>
-            
-        </div>
+        </div> 
     </div>
+
+    <section class="save-return">
+        <button id="save">Save</button>
+        <button id="return">Return</button>
+    </section>
+
     <!-- Enlaces a jquery y a jqueryUI -->
      <!-- Jquery normal -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -75,7 +76,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <!-- Importar script.js -->
-    <script src="../JS/game.js"></script>
+    <script src="../JS/costumes.js"></script>
 </body>
 </html>
 

@@ -21,7 +21,7 @@ body{
     margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
-    background-color:transparent;
+    background-color: #dbbdb5;
 }
 
 .settings{
@@ -56,7 +56,7 @@ body{
     margin-top: 1.75rem;
     display: flex;
     flex-direction: column;
-    gap: 1.8rem;
+    gap: 2.5rem;
     padding-left: 20%;
     padding-right: 20%;
 }
@@ -136,6 +136,9 @@ ancho 667*/
     .cont-settings{
     margin-top: 7%;
     }
+    .sliders{
+        gap: 2.5rem;
+    }
 
 }
 
@@ -172,7 +175,7 @@ ancho 667*/
     }
 
     p{
-        margin: 3vh;
+        margin: 1.75vh;
     }
 
     /* Sliders */
@@ -180,9 +183,10 @@ ancho 667*/
         margin-top: 4vh;
         display: flex;
         flex-direction: column;
-        gap: 3.75vh;
+        gap: 1rem;
         padding-left: 20%;
         padding-right: 20%;
+        padding-bottom: 0;
     }
 
     .hue {
@@ -209,8 +213,8 @@ ancho 667*/
     /* Botones */
 
     button{
-        width: 50vh;
-        height: auto;
-        font-size: 10vh;
+        width: 35vh;
+        height: 12vh;
+        font-size: 7vh;
     }
 }

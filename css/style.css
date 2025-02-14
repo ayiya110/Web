@@ -6,7 +6,8 @@
     font-weight: 700;
     font-style: normal;
     -webkit-text-stroke: 2px black;
-    margin: 0;
+    
+    
     padding: 0;
 }
 
@@ -20,11 +21,15 @@ h1{
 
 }
 
+.img-title{
+    width: 100%;
+}
+
 .background{
     position: fixed;
-    width: 50%;
+    width: 100%;
     height: auto;
-    background: url('fondo-web.webp') no-repeat center center/cover;
+    /* background: url('../Media/Img/Landing/fondo-web.webp') no-repeat center center/cover; */
     z-index: -1;
 }
 
@@ -505,7 +510,11 @@ footer{
 
 @media screen and (max-width: 1180px) {
     #btnOpenMenu, #btnCloseMenu {
-        display: block !important;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     } 
     .menu.open {
         display: flex;
@@ -627,10 +636,24 @@ footer{
 }
 
 /* Movil */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 375px) {
       #btnOpenMenu, #btnCloseMenu {
-        display: block !important;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
     } 
+
+    body{
+        width: 100%;
+    }
+
+    #header{
+        width: 100%;
+        padding: 0;
+    }
+
     .menu.open {
         display: flex;
         flex-direction: column;
@@ -652,7 +675,9 @@ footer{
         align-items: center;
         list-style: none;
         gap: 20px;
-        padding: 10px;
+        margin-top: 0;
+        padding-top: 0;
+        /* padding: 10px; */
     }
     
     .menu ul{
@@ -666,6 +691,9 @@ footer{
         padding: 10px;
     }
     
+    .intro{
+        width: 100%;
+    }
 
     h1 {
         font-size: 2.5rem;
@@ -700,23 +728,31 @@ footer{
         font-size: 1.4rem;
         padding: 0 1.5rem;
         text-align: justify;
+        -webkit-text-stroke: 0px ;
     }
     #mission {
         font-size: 1.4rem;
         padding: 1.5rem;
         text-align: justify;
+        -webkit-text-stroke: 0px ;
     }
 
     .contenerdor_equipo {
+        display: flex;
         flex-direction: column;
     }
     .contenedor_equipo img {
         width: 100%;
     }
 
+    .equipo{
+        padding: 0%;
+    }
+
     #equipo {
         font-size: 1.2rem;
         text-align: center;
+        -webkit-text-stroke: 0px ;
     }
 
     .registro {
@@ -767,6 +803,35 @@ footer{
     h2{
         -webkit-text-stroke: 2px black;
     }
+
+    .img_mon{
+        max-width: 20%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .header-container {
+        padding: 0;
+    }
+
+    span{
+        font-size: medium;
+        -webkit-text-stroke: 0px ;
+    }
+
+    label{
+        -webkit-text-stroke: 0px ;
+    }
+
+    #region{
+        -webkit-text-stroke: 0px ;
+    }
+
+    #email{
+        -webkit-text-stroke: 0px ;
+    }
+
+    
 }
 
 

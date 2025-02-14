@@ -13,7 +13,7 @@
     <div class="container">
         <!-- Personaje que cambia de color -->
         <div class="character" id="character">
-            <img src="../Media/Img/yellow.webp" alt="imgYellow">
+            <img id="selected-avatar" src="../Media/Img/Avatars/Gato.webp" alt="Avatar seleccionado">
 
         </div>
 
@@ -39,17 +39,26 @@
                 </div>
                 <label class="c-range__label3" for="brightness"></label>
             </div>
-            <div class="selector">
-                 <ul class="selector_list">
-                    <li><img class="avatar" src="../Media/Img/red.webp" data-avatar="avatar1.png"></li>
-                    <li><img class="avatar" src="avatar2.png" data-avatar="avatar2.png"></li>
-                    <li><img class="avatar" src="avatar3.png" data-avatar="avatar3.png"></li>
-                    <li><img class="avatar" src="avatar4.png" data-avatar="avatar4.png"></li>
-                    <li><img class="avatar" src="avatar5.png" data-avatar="avatar5.png"></li>
-                    <li><img class="avatar" src="avatar6.png" data-avatar="avatar6.png"></li>
-                    <li><img class="avatar" src="avatar7.png" data-avatar="avatar7.png"></li>
-                    <li><img class="avatar" src="avatar8.png" data-avatar="avatar8.png"></li>
-                 </ul>
+            <div class="carousel_container">
+                
+                <div class="carousel">
+                    <ul class="carousel-track">
+                        <li><img class="avatar" src="../Media/Img/Icons/animal-icons/cat.webp" data-avatar="../Media/Img/Avatars/Gato.webp"></li>
+                        <li><img class="avatar" src="../Media/Img/Icons/animal-icons/chicken.webp" data-avatar="../Media/Img/Avatars/Pollo.webp"></li>
+                        <li><img class="avatar" src="../Media/Img/Icons/animal-icons/crab.webp" data-avatar="../Media/Img/Avatars/Cangrejo.webp"></li>
+                        <li><img class="avatar" src="../Media/Img/Icons/animal-icons/duck.webp" data-avatar="../Media/Img/Avatars/Pato.webp"></li>
+                        <li><img class="avatar" src="../Media/Img/Icons/animal-icons/fox.webp" data-avatar="../Media/Img/Avatars/Zorro.webp"></li>
+                        <li><img class="avatar" src="../Media/Img/Icons/animal-icons/koala.webp" data-avatar="../Media/Img/Avatars/Koala.webp"></li>
+                        <li><img class="avatar" src="../Media/Img/Icons/animal-icons/shark.webp" data-avatar="../Media/Img/Avatars/Tiburon.webp"></li>
+                        <li><img class="avatar" src="../Media/Img/Icons/animal-icons/squirrel.webp" data-avatar="../Media/Img/Avatars/Ardilla.webp"></li>
+                     </ul>
+
+                </div>
+                <div class="buttons"> 
+                    <button id="prev">&#9665;</button>
+                    <button id="next">&#9655;</button>
+                </div>
+               
             </div>
         </div>
     </div>

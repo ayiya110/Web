@@ -7,24 +7,30 @@
     <link rel="stylesheet" href="../CSS/gameCSS.css">
 </head>
 <body>
-    <section class="main-menu">
-        <img src="/Media/Img/placeholder.webp" id="game-logo">
+    <section id="space"></section>
+    
+    <section class="main-screen">
+        <div class ="game-logo">
+            <img src="/Media/Img/logo.webp">
+        </div>
         <div class="menu">
-            <div id="button">
-                <h1>PLAY</h1>     
+            <div>
+                <a id="play"><h1>PLAY</h1></a>     
             </div>
-            <div id="button">
-                <h1>STATUS</h1> 
+            <div>
+                <a id="costumes"><h1>COSTUMES</h1></a>     
             </div>
-            <div id="button">
-                <h1>COSTUMES</h1>
+            <div>
+                <a id="settings"><h1>SETTINGS</h1></a>     
             </div>
-            <div id="button">
-                <h1>SETTINGS</h1>
-            </div> 
+            <div>
+                <a id="quit"><h1>QUIT</h1></a>     
+            </div>
         </div>
     </section>
 </body>
+
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
 <script src="../JS/game.js"></script>
 </html>

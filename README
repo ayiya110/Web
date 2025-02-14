@@ -11,3 +11,16 @@ Todos los nombres de id usando este formato "este_es_un_id"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 IMPORTANTE 
 Cargar los archivos en este orden, sino, da bugs
+
+
+/* tamaño ordenador
+ancho: 1440
+alto: 1024
+
+Tamaño tablet
+ancho 1180
+alto 820
+
+Movil (horizontal)
+alto 375
+ancho 667*/

@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="background"></div>
     <!-- HEADER -->
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="Media/Img/Icons/boneloaf-icon.webp">
-            </div>
-            <nav>
+    <header id="header">
+        <div class= "header-container">
+            <nav id="menu" class="menu">
+                <div class="logo"><img src="Media/Img/Icons/boneloaf-icon.webp"></div>
                 <ul>
+                    <li id="btnCloseMenu"><i class="fa-solid fa-xmark"></i></li>
                     <li><a href="#welcome" class="menu-button">Gang Beasts</a></li>
                     <li><a href="#mission" class="menu-button">Mission</a></li>
                     <li><a href="#equipo" class="menu-button">Who we are</a></li>
                     <li><a href="#footer-container" class="menu-button">Contacts</a></li>
                 </ul>
+                <a href="#registro" class="menu-button beta">Join the Beta</a>
             </nav>
-            <a href="#registro" class="menu-button beta">Join the Beta</a>
         </div>      
+        <div id="btnOpenMenu"><i class="fa-solid fa-bars"></i></div>
     </header>
 
     <div class="intro">
@@ -156,5 +156,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- Enlace al JS Externo -->
+    <script src="JS/main.js"></script>
 </body>
 </html>

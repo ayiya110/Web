@@ -187,7 +187,7 @@ nav ul li a{
     /* flex-direction: column; */
     flex-wrap: wrap;
     padding: 4rem 7rem 7rem 7rem;
-    height: 95vh;
+    /* height: 95vh; */
     align-items: center;
     justify-content: center;
 }
@@ -215,6 +215,7 @@ nav ul li a{
 }
 .contenedor_equipo img {
     border-radius: 10px;
+    
 }
 
 /* REGISTRO */
@@ -224,6 +225,7 @@ nav ul li a{
     flex-direction: column;
     padding: 4rem 6rem 6rem 6rem;
     height: 110vh;
+    color: white;
 }
 
 #registro{
@@ -576,12 +578,15 @@ footer{
     }
 
     .overlay {
-        width: 90%;
-        font-size: 1.2rem;
+        font-size: 0.5rem;
+        top: 40%;
+        left: 25%;
+        width:30%;
+        transform: translate(-40%, -40%);
     }
 
     .overlay a {
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 5px 8px;
     }
 
@@ -601,6 +606,9 @@ footer{
         text-align: justify;
     }
 
+    .contenerdor_equipo {
+        flex-direction: column;
+    }
     .contenedor_equipo img {
         width: 100%;
     }

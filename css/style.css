@@ -251,7 +251,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 4rem 6rem 6rem 6rem;
-    height: 110vh;
+    /* height: 110vh; */
     color: white;
 }
 

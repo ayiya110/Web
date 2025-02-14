@@ -1,6 +1,6 @@
 $(document).ready(function () {
     function updateCharacterStyle() {
-        // let hue = $("#hue").val();
+        let hue = $("#hue").val();
         let saturation = $("#saturation").val();
         let brightness = $("#brightness").val();
 
@@ -33,4 +33,33 @@ $(document).ready(function() {
   });
 
   setDefaultState();
+});
+
+$(document).ready(function() {
+    let index = 0;
+    const avatars = $(".avatar");
+    const totalAvatars = avatars.length;
+    const track = $(".carousel-track");
+    const avatarWidth = $(".avatar").outerWidth(true);
+    
+    $(".avatar").click(function() {
+        let newAvatar = $(this).data("avatar");
+        $("#selected-avatar").attr("src", newAvatar);
+        avatars.removeClass("selected");
+        $(this).addClass("selected");
+    });
+    
+    $("#next").click(function() {
+        if (index < totalAvatars - 3) {
+            index++;
+            track.css("transform", `translateX(${-index * avatarWidth}px)`);
+        }
+    });
+    
+    $("#prev").click(function() {
+        if (index > -2) {
+            index--;
+            track.css("transform", `translateX(${-index * avatarWidth}px)`);
+        }
+    });
 });

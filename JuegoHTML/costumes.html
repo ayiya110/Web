@@ -13,7 +13,7 @@
     <div class="container">
         <!-- Personaje que cambia de color -->
         <div class="character" id="character">
-            
+            <img id="selected-avatar" src="../Media/Img/Avatars/Gato.webp" alt="Avatar seleccionado">
 
         </div>
 
@@ -23,17 +23,43 @@
             <h1>Customice your beast</h1>
             <div class="c-range">  
                 <div class="c-range__holder">    
-                  <input class="c-range__slider js-range-input" id="hue" type="range" value="50" max="360">
-                  <!-- <output class="c-range__output js-range-output" for="hue"></output> -->
+                  <input class="c-range__slider js-range-input" id="hue" type="range" value="50" max="360" value="0">
                 </div>
                 <label class="c-range__label" for="hue"></label>
-              </div>
-            <label>Saturación
-                <input type="range" id="saturation" min="0" max="200" value="100">
-            </label>
-            <label>Brillo
-                <input type="range" id="brightness" min="50" max="200" value="100">
-            </label>
+            </div>
+            <div class="c-range-saturation">
+                <div class="c-range__holder2">
+                    <input class="c-range__slider2 js-range-input2" id="saturation" type="range" min="0" max="200" value="200">
+                </div>
+                <label class="c-range__label2" for="saturation"></label>
+            </div>
+            <div class="c-range-brightness">
+                <div class="c-range__holder3">
+                    <input class="c-range__slider3 js-range-input3" type="range" id="brightness" min="50" max="200" value="100">
+                </div>
+                <label class="c-range__label3" for="brightness"></label>
+            </div>
+            <div class="carousel_container">
+                
+                <div class="carousel">
+                    <ul class="carousel-track">
+                        <li><img class="avatar" src="../Media/Img/Icons/animal-icons/cat.webp" data-avatar="../Media/Img/Avatars/Gato.webp"></li>
+                        <li><img class="avatar" src="../Media/Img/Icons/animal-icons/chicken.webp" data-avatar="../Media/Img/Avatars/Pollo.webp"></li>
+                        <li><img class="avatar" src="../Media/Img/Icons/animal-icons/crab.webp" data-avatar="../Media/Img/Avatars/Cangrejo.webp"></li>
+                        <li><img class="avatar" src="../Media/Img/Icons/animal-icons/duck.webp" data-avatar="../Media/Img/Avatars/Pato.webp"></li>
+                        <li><img class="avatar" src="../Media/Img/Icons/animal-icons/fox.webp" data-avatar="../Media/Img/Avatars/Zorro.webp"></li>
+                        <li><img class="avatar" src="../Media/Img/Icons/animal-icons/koala.webp" data-avatar="../Media/Img/Avatars/Koala.webp"></li>
+                        <li><img class="avatar" src="../Media/Img/Icons/animal-icons/shark.webp" data-avatar="../Media/Img/Avatars/Tiburon.webp"></li>
+                        <li><img class="avatar" src="../Media/Img/Icons/animal-icons/squirrel.webp" data-avatar="../Media/Img/Avatars/Ardilla.webp"></li>
+                     </ul>
+
+                </div>
+                <div class="buttons"> 
+                    <button id="prev">&#9665;</button>
+                    <button id="next">&#9655;</button>
+                </div>
+               
+            </div>
         </div>
     </div>
     <!-- Enlaces a jquery y a jqueryUI -->

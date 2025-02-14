@@ -369,5 +369,15 @@ input[type="range"] {
 /* Selector de personajes */
   .selector_list {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
+    width: 100%;
+  }
+
+  .selector_list li {
+    list-style: none;
+    border-radius: 20px;
+    margin: 30px;
+    
   }

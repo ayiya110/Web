@@ -57,7 +57,7 @@ $(document).ready(function() {
     });
     
     $("#prev").click(function() {
-        if (index > -2) {
+        if (index > -3) {
             index--;
             track.css("transform", `translateX(${-index * avatarWidth}px)`);
         }

@@ -174,10 +174,19 @@ header {
     font-size: 2rem;
 }
 
+.welcome a{
+    display: flex;
+    justify-content: center;
+    
+}
+
 .welcome img {
     width: 60%;
     margin-top: 20px;
+    text-align: center;
 }
+
+
 
 /* Mission Section */
 .mission {

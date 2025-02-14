@@ -63,3 +63,15 @@ $(document).ready(function() {
         }
     });
 });
+
+$(document).ready(function(){
+    let botonReturn = $("#return");
+    botonReturn.click(function(){
+     window.location.href="../JuegoHTML/game.html";
+     });
+     let PlayLink = $("#save");
+      PlayLink.click(function(){
+          window.location.href="../JuegoHTML/maps.html";
+      }); 
+     
+});

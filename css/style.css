@@ -13,6 +13,7 @@
 
 body{
     margin: 0;
+    background-color: #2d1e38;
 }
 
 h1{
@@ -173,10 +174,19 @@ header {
     font-size: 2rem;
 }
 
+.welcome a{
+    display: flex;
+    justify-content: center;
+    
+}
+
 .welcome img {
     width: 60%;
     margin-top: 20px;
+    text-align: center;
 }
+
+
 
 /* Mission Section */
 .mission {
@@ -200,7 +210,7 @@ header {
     color: white;
     text-align: center;
     padding: 0rem 5rem 5rem 5rem;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
 }
 
 .mission .highlight {
@@ -251,7 +261,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 4rem 6rem 6rem 6rem;
-    height: 110vh;
+    /* height: 110vh; */
     color: white;
 }
 

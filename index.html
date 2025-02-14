@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="background"></div>
     <!-- HEADER -->
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="Media/Img/Icons/boneloaf-icon.webp">
-            </div>
-            <nav>
+    <header id="header">
+        <div class= "header-container">
+            <nav id="menu" class="menu">
+                <div class="logo"><img src="Media/Img/Icons/boneloaf-icon.webp"></div>
                 <ul>
+                    <li id="btnCloseMenu"><i class="fa-solid fa-xmark"></i></li>
                     <li><a href="#welcome" class="menu-button">Gang Beasts</a></li>
                     <li><a href="#mission" class="menu-button">Mission</a></li>
                     <li><a href="#equipo" class="menu-button">Who we are</a></li>
                     <li><a href="#footer-container" class="menu-button">Contacts</a></li>
                 </ul>
+                <a href="#registro" class="menu-button beta">Join the Beta</a>
             </nav>
-            <a href="#registro" class="menu-button beta">Join the Beta</a>
         </div>      
+        <div id="btnOpenMenu"><i class="fa-solid fa-bars"></i></div>
     </header>
 
     <div class="intro">
-        <img src="Media/Img/Landing/fondo-web.webp" alt="Gang Beasts">
+        <img class="img-title" src="Media/Img/Landing/fondo-web.webp" alt="Gang Beasts">
         <div class="overlay">
             <img src="Media/Img/Landing/logogang-beast.webp" alt="Gang Beasts Logo">
-            <button class="button-intro">FIND OUT MORE</button>
+            <a href ="/JuegoHTML/game.html" class="button-intro">PLAY NOW</a>
         </div>
     </div>
 
@@ -45,21 +45,21 @@
         <img src="Media/Img/Landing/img-intro.webp" alt="Gang Beasts PS4">
     </div>
 
-    <div class="mission">
+        <div class="mission">
         <h1 class="missionh1">OUR MISSION STATEMENT</h1>
         <p id="mission">We wish to <span class="highlight">bring passion projects to life</span> 
         which people from all walks of life can enjoy, remember and inspire for the rest of their lives.</p>
-    </div>
+        </div>
 
         <div class="equipo">
-        <h1 id="equipo">Who we are</h1>
+        <h1 class="equipoh1">Who we are</h1>
         <h2 id="equipo">
             Born in 2018 , our founders and childhood partners Javier García Lobato amd Isaac Venedo Gil opened Locked Entertainment in the heart of the Iberian peninsula. Wanting to promote the game industry in the country, they have realeased titles loved by all, such as ‘Fortdamsel’.
         </h2>
         <div class="contenedor_equipo">
-            <img src="Media/Img/Landing/per1.webp" alt="Imagen1">
-            <img src="Media/Img/Landing/per2.webp" alt="Imagen1">
-            <img src="Media/Img/Landing/per3.webp" alt="Imagen1">
+            <img class="img_mon" src="Media/Img/Landing/per1.webp" alt="Imagen1">
+            <img class="img_mon" src="Media/Img/Landing/per2.webp" alt="Imagen1">
+            <img class="img_mon" src="Media/Img/Landing/per3.webp" alt="Imagen1">
         </div>
     </div>
 
@@ -128,7 +128,6 @@
                 <div class="social">
                     <h3> Follow Us</h3>
                     <div class="social-Icons">
-                        
                         <a href="https://www.instagram.com" target="_blank">
                             <img src="Media/Img/Icons/instagram-icon.webp" alt="Instagram">
                         </a>
@@ -144,7 +143,6 @@
                     </div>
                 </div>
                 <div class="navigation">
-                    
                     <ul>
                         <li><a href="#bienvenida">GANG BEAST</a></li>
                         <li><a href="#mision">MISSION</a></li>
@@ -158,7 +156,8 @@
             </div>
         </div>
     </footer>
-    
-</body>
 
+    <!-- Enlace al JS Externo -->
+    <script src="JS/main.js"></script>
+</body>
 </html>
